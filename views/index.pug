@@ -1,0 +1,82 @@
+extends layout
+
+block content
+  h1 Enter Your Words
+  form(method="POST" action="/story" id="words")
+    label(for="noun1") Noun:
+    input(type="text" name="noun1" id="noun1" value="house")
+    br
+    label(for="noun2") Noun:
+    input(type="text" name="noun2" id="noun2" value="car")
+    br
+    label(for="noun3") Noun:
+    input(type="text" name="noun3" id="noun3" value="dog")
+    br
+    label(for="pluralNoun1") Plural noun:
+    input(type="text" name="pluralNoun1" id="pluralNoun1" value="blocks")
+    br
+    label(for="pluralNoun2") Plural noun:
+    input(type="text" name="pluralNoun2" id="pluralNoun2" value="brooms")
+    br
+    label(for="pluralNoun3") Plural noun:
+    input(type="text" name="pluralNoun3" id="pluralNoun3" value="pumpkins")
+    br
+    label(for="verb1") Verb:
+    input(type="text" name="verb1" id="verb1" value="jump")
+    br
+    label(for="verb2") Verb:
+    input(type="text" name="verb2" id="verb2" value="fall")
+    br
+    label(for="verb3") Verb:
+    input(type="text" name="verb3" id="verb3" value="sprint")
+    br
+    label(for="pastTenseVerb1") Past-tense verb:
+    input(type="text" name="pastTenseVerb1" id="pastTenseVerb1" value="sliced")
+    br
+    label(for="adjective1") Adjective:
+    input(type="text" name="adjective1" id="adjective1" value="fiery")
+    br
+    label(for="adjective2") Adjective:
+    input(type="text" name="adjective2" id="adjective2" value="freezing")
+    br
+    label(for="adjective3") Adjective:
+    input(type="text" name="adjective3" id="adjective3" value="repugnant")
+    br
+    label(for="adjective4") Adjective:
+    input(type="text" name="adjective4" id="adjective4" value="sharp")
+    br
+    label(for="adjective5") Adjective:
+    input(type="text" name="adjective5" id="adjective5" value="dripping")
+    br
+    label(for="name1") Name:
+    input(type="text" name="name1" id="name1" value="Luigi")
+    br
+    label(for="nationality1") Nationality:
+    input(type="text" name="nationality1" id="nationality1" value="Canadian")
+    br
+    label(for="number1") Number:
+    input(type="text" name="number1" id="number1" value="5")
+    br
+    label(for="number2") Number:
+    input(type="text" name="number2" id="number2" value="67")
+    br
+    label(for="shapes1") Shape (multiple):
+    input(type="text" name="shapes1" id="shapes1" value="octagons")
+    br
+    label(for="food1") Food:
+    input(type="text" name="food1" id="food1" value="calamari")
+    br
+    label(for="food2") Food:
+    input(type="text" name="food2" id="food2" value="pizza")
+    br
+    label(for="color1") Color:
+    input(type="text" name="color1" id="color1" value="maroon")
+    br
+  label(for="storyChoice") Choose One:
+  select(form="words" name="storyChoice" id="storyChoice")
+      option(value="1") Story 1
+      option(value="2") Story 2
+      option(value="3") Story 3
+      option(value="4") Pick For Me
+  br
+  button(type="submit" form="words") Tell Me a Story
