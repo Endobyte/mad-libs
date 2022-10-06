@@ -1,7 +1,7 @@
 extends layout
 
 block content
-  h1 Enter Your Words
+  h1 Enter your words
   form(method="POST" action="/story" id="words")
     label(for="noun1") Noun:
     input(type="text" name="noun1" id="noun1" value="house")
@@ -77,6 +77,6 @@ block content
       option(value="1") Story 1
       option(value="2") Story 2
       option(value="3") Story 3
-      option(value="4") Pick For Me
+      option(value="4") Pick for me
   br
-  button(type="submit" form="words") Tell Me a Story
+  button(type="submit" form="words") Tell me a story
